@@ -1,0 +1,31 @@
+.marquee {
+  width: 100%;
+  font-family: Mantou;
+  font-size: 6.4rem;
+  color: $color-white;
+  background-color: $color-theme-primary;
+  user-select: none;
+  overflow: hidden;
+
+  display: flex;
+  gap: 4rem;
+
+  &__content {
+    flex-shrink: 0;
+    min-width: 100%;
+    animation: marquee 10s linear infinite;
+
+    display: flex;
+    justify-content: space-around;
+    gap: 4rem;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(calc(-100% - 4rem));
+  }
+}

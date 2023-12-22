@@ -1,0 +1,40 @@
+.section-sub-banner {
+  text-align: center;
+
+  .sub-banner__title {
+    font-family: Mantou;
+    font-size: 6.4rem;
+    line-height: 9.6rem;
+    letter-spacing: 2px;
+
+    color: transparent;
+    background: $color-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(tablet) {
+      margin-bottom: 2.4rem;
+      line-height: 1;
+
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  .sub-banner__name {
+    font-weight: 700;
+    font-size: 4rem;
+    letter-spacing: -2px;
+    color: $color-theme-primary;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+  }
+}

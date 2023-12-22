@@ -1,0 +1,50 @@
+.swiper {
+  width: 100%;
+  overflow: initial;
+}
+
+.swiper-wrapper {
+  margin-bottom: 2.4rem;
+}
+
+.swiper-controller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.swiper-custom-prev,
+.swiper-custom-next {
+  width: 3.2rem;
+  height: 3.2rem;
+  background-color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-custom-prev svg,
+.swiper-custom-next svg {
+  display: block;
+  width: 1.6rem;
+  height: 1.6rem;
+  color: $color-theme-primary;
+}
+
+.swiper-pagination-bullets.swiper-pagination-horizontal {
+  width: auto;
+}
+
+.swiper-custom-pagination .swiper-pagination-bullet {
+  background-color: $color-theme-primary;
+  opacity: 0.4;
+  transition: all 0.3s ease-in-out;
+}
+
+.swiper-custom-pagination .swiper-pagination-bullet-active {
+  opacity: 1;
+}

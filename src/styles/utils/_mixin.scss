@@ -1,0 +1,19 @@
+@mixin tabStyle {
+  background-color: $color-text-primary;
+  border-radius: 16px;
+  padding: 1.2rem 1.6rem;
+  color: $color-white;
+}
+
+@mixin respond($breakpoint) {
+  @if $breakpoint == tablet {
+    @media only screen and (max-width: 48em) {
+      @content;
+    }
+  }
+  @if $breakpoint == phone {
+    @media only screen and (max-width: 36em) {
+      @content;
+    }
+  }
+}

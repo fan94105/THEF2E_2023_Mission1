@@ -1,0 +1,124 @@
+.banner {
+  padding-top: 9.6rem;
+  border-top: 7rem solid $color-bg-light;
+  position: relative;
+
+  @include respond(phone) {
+    border-top: 0;
+  }
+
+  &-title {
+    font-size: 9.6rem;
+    font-family: Mantou;
+    white-space: nowrap;
+
+    // 文字漸層
+    background: $color-gradient;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+
+    @include respond(tablet) {
+      margin-bottom: 2.4rem;
+      line-height: 1;
+
+      flex-direction: column;
+      gap: 0;
+    }
+  }
+
+  &-subtitle {
+    margin-bottom: 2.4rem;
+    white-space: nowrap;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.6rem;
+
+    @include respond(phone) {
+      flex-direction: column;
+    }
+
+    .name {
+      padding: 1.2rem 1.6rem;
+      background-color: rgba($color-white, 0.9);
+      border: 1px solid $color-white;
+      border-radius: 16px;
+      color: $color-theme-primary;
+      box-shadow: 0 0.4rem 1.2rem rgba(#a3b4cb, 0.2);
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 1.6rem;
+
+      @include respond(phone) {
+        width: 90%;
+      }
+    }
+
+    .tab {
+      @include tabStyle;
+    }
+  }
+
+  &-img {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__background {
+      width: 50%;
+      position: absolute;
+      bottom: 0;
+      z-index: -1;
+
+      @include respond(phone) {
+        width: 90%;
+      }
+    }
+
+    &__man {
+      width: 30%;
+      display: inline-block;
+
+      @include respond(phone) {
+        width: 50%;
+      }
+    }
+  }
+
+  &-social-links {
+    width: 50vw;
+    position: absolute;
+    left: 50%;
+    bottom: 5%;
+    transform: translateX(-50%);
+
+    padding: 1.2rem 2.4rem;
+    background-color: $color-white;
+    border-radius: 1.6rem;
+    border: 1px solid $color-bg-light;
+
+    display: none;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1.6rem;
+
+    @include respond(phone) {
+      display: flex;
+    }
+
+    a {
+      height: 100%;
+    }
+  }
+}

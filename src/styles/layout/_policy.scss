@@ -1,0 +1,64 @@
+.section-policy {
+  background-color: $color-bg-dark;
+  overflow: clip;
+}
+
+.policies {
+  width: 50vw;
+  margin: 0 auto;
+
+  @include respond(tablet) {
+    width: 60vw;
+  }
+
+  &__header {
+    margin-bottom: 6.4rem;
+  }
+
+  .policy {
+    user-select: none;
+    padding: 3.2rem;
+    background-color: $color-white;
+    border-radius: 32px;
+
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    column-gap: 3.2rem;
+
+    @include respond(phone) {
+      display: block;
+    }
+
+    &__img {
+      align-self: center;
+      width: 100%;
+
+      img {
+        width: 100%;
+        border-radius: 32px;
+        object-fit: cover;
+      }
+    }
+
+    &__describe {
+      // padding: 7.1rem 0 4.7rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      @include respond(phone) {
+        // padding: 4.7rem 0;
+      }
+    }
+
+    &__title {
+      margin-bottom: 4rem;
+    }
+
+    &__btn {
+      width: 12.5rem;
+      color: $color-white;
+      background-color: $color-theme-primary;
+    }
+  }
+}

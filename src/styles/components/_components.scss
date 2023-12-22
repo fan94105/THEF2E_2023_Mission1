@@ -1,0 +1,93 @@
+.title-container {
+  margin-bottom: 3.2rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tab {
+  @include tabStyle;
+  text-transform: uppercase;
+}
+
+.tab--small {
+  width: 8rem;
+  height: 3rem;
+  border-radius: 500px;
+  padding: 0.4rem 1.2rem;
+  margin-bottom: 1.6rem;
+  font-size: $font-small;
+
+  &--green {
+    background-color: #beeadb;
+  }
+
+  &--orange {
+    background-color: $color-bg-dark;
+  }
+
+  &--pink {
+    background-color: #ffdddd;
+  }
+}
+
+.title {
+  font-family: Mantou;
+  font-size: 6.4rem;
+  line-height: 92.67px;
+
+  // 文字漸層
+  background: $color-gradient;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.highlight {
+  color: $color-theme-primary;
+}
+
+.content {
+  font-size: $font-large;
+  font-weight: 400;
+  line-height: 2.7rem;
+}
+
+.date {
+  font-size: $font-small;
+  color: $color-text-secondary;
+  margin-bottom: 0.8rem;
+}
+
+.btn {
+  width: 16rem;
+  background-color: #f1f5f9;
+  padding: 1.6rem 2.4rem;
+  border: 1px solid $color-white;
+  border-radius: 500px;
+  font-size: $font-regular;
+  font-weight: 600;
+  line-height: 19.36px;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+
+  &-right {
+    width: 3.2rem;
+    height: 3.2rem;
+  }
+}
+
+.number {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  background: $color-gradient;
+  border-radius: 50%;
+  font-size: 3.2rem;
+  font-weight: 900;
+  color: $color-white;
+  text-align: center;
+}
